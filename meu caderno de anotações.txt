@@ -1,0 +1,256 @@
+LINKS CITADOS PELO PROFESOR:
+
+  * Qual vídeo: Precisamos fazer um acordo - @Curso em Vídeo HTML5 e CSS3
+Link: "repositórios Públicos"
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+
+ATENÇÃO:
+Prática. Não é pra maratonar os vídeos sem fazer nada.
+
+Não tem que ter pressa (mas tenho prazos, deixar Sandro ciente)
+Segunda terça e quinta tem aula nova de HTML
+ 
+  * Qual vídeo: Melhores livros para aprender HTML5 e CSS3 - @Curso em Vídeo HTML5 e CSS3
+- Referências Online, gratuitas.
+  1.1 - Referencia MDN - Mozila Developer Network
+  1.2 - W3C - World Wide Web Consortium (é a referência oficial. Ingles)
+  1.3 - Whatwg Living Standard - WEB Hypertext Application Technology Working Group
+  1.4 - W3Schools - Refsnes Data
+
+Citados também referências em livros. Mas não curto muito esse tipo de material. Caso surja o interesse fica a referência.
+
+[16/07/2021]
+<primeiro html></>
+--------------------------------------------------
+
+"Como a internet chega na minha casa?"
+- Guerra fria
+ARPANET
+4 centros.
+NCP
+1972 - muitos pontos na rede
+protocolo de TCP/IP
+TCP - bob kahn
+Vint - IP
+
+Tim Berners-Lee criou (1993-1994) algo que faria parte do potocolo TCP IP:
+HTTP - hyper text transfer protocol
+criou também o que vamos estudar:
+HTML - Hiper Text Markup Linguage
+Criou também o termo:
+WORD WIDE WEB (WWW) pra acssar precisa de um navegador
+O Mozaic foi o primeiro navegador criado pelo Marc Anerssen
+
+Diferença entre Word Wide Web e Internet
+Dentro da Internet tem diersos servidores espeializados em coisas diferente. Ex:
+- FTP
+- GOPHER (hipertexo simples)
+- SMTP/POP3/IMAP (Receber e mandar e-mail)
+- HTTP - o WWW é uma subrede da internet, especializado em HTTP
+Encerrrou
+---------------------------------
+
+"Como a Internet funciona?"
+
+representção de dados:
+0 1 = binary digit = bit
+01000001 = 8 bits = byte (porção minima que pode representar alguma informação) = A
+pra saber a representação de todos os digitos tem que consltar o código Multibyte = UTF-8
+Esses "0" e "1" são ondas quadradas, unica forma que PC processa informação
+1024 bytes = 1 KB (computador trbalha com base dois né burra, já que o bagulho é BInário, não é base 10 como na vida cotidiana com kg e etc)
+1024 KB = 1 MB
+1024 MB = 1 GB
+1024 GB = 1 TB
+1024 TB = 1 PB
+1024 PB = 1 EB
+1024 EB = 1 ZB
+1024 ZB = 1 YB
+
+MB (megabytes - armazenamento) diferente de Mb (megabit - Trasmissão)
+
+Como nos conectamos?
+client (PC)
+internet
+o Modem faz a modulação e Demodulação
+
+Servidores 
+
+DNS - Donate name system
+------------
+Vídeo:
+O que é domínio e hospedagem?
+
+Guardando no servidor os URLs
+Guardando no meu PC - arquivos HTML e CSS. Depois ireos colocar isso em um servidor.
+Guardando em outro PC - Só consigo acessar com um dominio e local pra colocar os arquivos, o servidores, um hospedagem
+Precisa dominio - nome único (pago anualmente), vários TLD
+hospedagem - Pago mensalmente, local para guardar os aquivos, espaço, memoria, recursos. Toma cuidado pra escolher.
+
+ex:
+www.github.com/gustavoguanabara
+- URL - Uniform Resorces Locator (pesquisa o DNS e vai pra pagina certa)
+  1.1 - dominio (github.com) o ".com" é o TLD 
+[GTLD - "generic" são genericos ex: .com é comercial .edu instituições educacionais .gov pra governamentais .store pra lojas]
+[Cctld - "contry code" são pra países ex: .br pro brasil .us pro USA .UK pra inglaterra, .ar pra argentina
+WWW - subdominio
+depois da / é o caminho 
+
+exercício, identifique cada parte dessa URL:
+
+gustavoguanabara.github.io
+
+isso é uma URL válida? sim.
+gustavoguanabara - caminho === Não, esse é o subdomínio essa URL não tem caminho
+.github - domínio 
+.io - GTLD
+
+*** quando tem na frente da URL "HTTPS" isso é o protocolo mencionado nas outras aulas.
+--------------------------------------------
+
+VÍDEO
+A diferença entre HTML, CSS e JavaScript
+
+Certo é falar no Feminino pq são A linguagm HTML e CSS são AS folhas de estilo.
+Não é considerada linguagem de programaão - diz que desesenvolve em HTML e CSS
+
+HTML - hypertext Markup Language (linguagem focada em CONTEUDO - texto, tabela, lista)
+CSS - Cascating style Sheets (atrativo visual - cores, sombras, tamanhos)
+JS (ESSE SIM É PROGRAMAÇÃO) - JavaScript (Interações,  menus interativos, animaçoes, validaçoes, popuos)
+
+CONTEÚDO HTML:
+Conchete angular 
+abertura de tag <h1> exemplo título </h1> fechamento de tag
+<p> exemplo de parágrafo </p>
+pra colocar foto na tela:
+<img src="foto.png"alt="exemplo de foto">
+<imf src é uma tag que não tem fechamento
+o que etá entre " é o valor
+o alt= é parâmetro
+
+ESTILO EM CSS
+- As tag são em style
+se eu quiser alterar o h1 tenho que tirar os conchetes angulares e adicionar o chaves {
+h1          {front-family:Arial;
+^ seletor    front-size:20pt;
+             color:blue
+              ^ isso são declarações, onde "color:" é propriedade e "blue;" é valor
+
+Estrutura básica de documento HTM
+<!doctype html>                     É usado isso pra dizer que a lingugem sera HTML5
+<html lang= "pt-BR">
+'  <head>                           2 areas serão bem definidas, head
+'  '   <meta charset="UTF-8">       Isso dá compatibilidade com caracteres acentuados e tal
+'  '   <meta name="viewport"               
+'  '   content="width=device-with,
+'  '   initial-scale=1.0>            Isso quer dizer que será visualizado numa escala de 100%, na parte branca
+'  '   <title>Document</title>
+'  </head>
+'  <body>
+'  '   <h1>Olá, mundo!</h1>
+'  </body>
+</html>
+
+COMO FUNCIONA A HTML E AS CSS?
+dentro do servidor tem o HTML e as CSS
+tu digita a url no teu cliente ele acessa o DNS ele volta no servidor que tem a HTML e as CSS
+
+=================================================================
+
+Vídeo:
+Front-end, Back-end e Full stack
+
+o front end é "client side (front end) developer" pq envolve os desenvolvimentos client side, que é HTML e as CSS (desenvolvedor front end)
+Diferente do DESIGNER que faria o desenho do site pra depois dar na mao do desenvolvedor front end executar
+o back end é "server-side (back-end)" que usam a linguagem php (uma das mais famosas aplicadas em web) JS (abodagem diferente usada no server side) C charp, pyton e linguagem java
+Se a pessoa sabe desenvolver os dois mundos é chamado de Full Stack
+
+====================================================================
+
+Vídeo:
+Hierarquia de Títulos
+
+- Explicando o obvio ali até agora
+Os níveis de h vai até o h1 ao h6, tamanhos e what ever só com CSS
+
+====================================================================
+
+Vídeo:
+Links e Âncoras em HTML5 
+
+Como "cadastrar" meu site no Google
+Pesquisar sobre SEO - Search Engement Organization (Otimizção para mecanismos de busca)
+Olhar vídeo (link no material em PDF - cap. 10) sobre como o Google acha os sites
+
+====================================================================
+VÍDEO:
+Imagens Dinâmicas
+
+Largura de documento no photoshop pra usar em HTML/CSS no celular
+300x300 px 80resolution
+Pra Tablet
+700x700px 80 resolution
+pra smartTV
+1000x1000px 80 resolution
+
+Fim dessa aula
+====================================================================
+VÍDEO:
+Formatos de vídeo para seu site 
+*dica do guanabara referente a hospedagem de vídeo num site seu ou de cliente
+====================================================================
+
+MÓDULO 2 CURSO CSS3 e HTML5
+---------------------------
+Capítulo 13 Aula 1 – Cores
+---
+Capítulo 13 Aula 3 Parte 1 – Harmonização de cores
+*Circulo cromático - Pra harmonia de cores.
+Desenha o bagulho aí;
+Cores primárias> Amarelo > Vermelho > Azul (triangulo equilátero)
+Cores Secundárias > Larnja > Violeta > Verde (Triangulo Equilátero de ponta cabeça)
+Cores Terciárias: Derivações, misturas das cor primaria e secundária. "Amarelo esverdeado".
+> Amarelo-esverdedo > Amarelo-alaranjado > Vermelho-alaranjado > Vermelho-arroxeado > Azul-arroxeado > Azul-Esverdeado (tons pasteis)
+12 cores no circuo cromatico
+
+Cores frias no hemisferio esquerdo. São analogas entre si.
+Cores quentes no hemisferio direito. São analogas entre si.
+
+Palhetas de cores pra sites geralemnte tem de 3 a 5 cores
+Ex: Pra traçar cores que contrastam tem que trçar uma linha de um lado praoutro do círculo.
+ Cores analogas relacionadas:
+duas cores vizinhas + pula a outra e pega a terceira. Sutil contraste.
+----- 
+
+MÓDULO 2 CURSO CSS3 e HTML5
+---------------------------
+Capítulo 16 aula 01 - Modelo de caixas
+
+Box level = ocupa a linha toda, tem quebra de linha. Ex.:
+  <div>
+  <h1> - <h6>
+  <p>
+  <main>
+  <header>
+  <nav>
+  <article>
+  <aside>
+  <footer>
+  <form>
+  <video>
+
+inline-level = elemento que aparece em tela sem precisar quebrar linha.
+  <span>
+  <a>
+  <code>
+  <small>
+  <strong>
+  <em>
+  <sup>-<sub>
+  <label>
+  <button>
+  <input>
+  <select>
+
+
+

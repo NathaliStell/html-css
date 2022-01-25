@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--SELETORES PERSONALIZADOS
+        
+        LEMBRANDO QUE PSEUDOCLASSES SÃO PALAVRAS QUE DEFINEM ESTADO DE ELEMENTOS DENTRO DA HTML. E SÃO REPRESENADAS POR :
+    
+        JÁ OS PSEUDOELEMENTOS ELE AGE NAS CLASSES NOS ELEMENTOS NAS ID'S. MEXEM DIRETAMENTE NO CONTEÚDO PERIFÉRICO DO ELEMENTO. E SÃO REPRESENTADAS POR ::
+        #  = id
+        .  = class
+        :  = pseudo-classe
+        :: = pseudo-element
+        >  = children    
+-->
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+        a {
+            color: cadetblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(255, 158, 255)
+        }
+        a:hover {
+            color: thistle;
+            text-decoration: underline;
+        }
+        a:active {
+            color: teal;
+        }
+        a::after {
+            content: '(link)';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(201, 45, 201);
+        }
+        h1 {
+            color: cadetblue;
+        }
+        ul {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Reposição GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

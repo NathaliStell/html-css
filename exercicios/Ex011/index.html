@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="sun.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abrir essa bagulho aqui em diferentes dispositivos ou simplesmnte aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos apredender a reproduzir audios em HTML5</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/tea time - ofshane.mp3" type="audio/mpeg">
+        Infelizmente seu navegador não consegue reproduzir áudio.
+        <!--Pra essa opação tu vai usar um parâmetro preload depois do audio, tem 3 opções: metadata (que vai carregar só as informações principais) auto (que só vai terminar de carregar a página quando o arquivo todo de audio tiver carregado, o que te fode se o arquivo for muito grande) e o último parâmtro é o none (que não vai fazer porra nenhuma, só se a pessoa resolver dar play no bagulho) -->
+        <a href="midia/tea time - ofshane.mp3"> Clique aqui para carregar o link</a>  
+    </audio>
+    <audio src="midia/sunset n ceachz - ofshane.mp3" controls autoplay></audio> <!----mp3 ogg wav-->
+
+    <h1> Reproduzindo vídeos</h1>
+    
+
+</body>
+</html>
