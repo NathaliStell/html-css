@@ -1,8 +1,19 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Playball', cursive;
+    --fonte3: 'Roboto', sans-serif;
+}
+
 body, html {
     min-height: 100vh;
     background-color: gray;
+    font-family: var(--fonte3)
 }
 
 header {
@@ -14,6 +25,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -35,6 +48,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2.5em;
     padding-left: 30px;
+    font-size: 2vw;
 }
 
 section.normal {
@@ -48,7 +62,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 500px;
+   display: inline-block;
+   padding: 5px;
     background-color: rgba(0, 0, 0, 0.192);
 }
 
