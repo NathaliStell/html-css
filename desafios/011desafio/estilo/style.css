@@ -84,7 +84,7 @@ section.imagem > p {
    padding: 10px;
    background-color: #de7009a9;
    border-radius: 10px;
-   text-shadow: 1px 1px 0px black;
+   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
 }
 
 section.imagem > ol {
