@@ -10,6 +10,12 @@
     --fonte3: 'Roboto', sans-serif;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 body, html {
     min-height: 100vh;
     background-color: gray;
@@ -17,7 +23,10 @@ body, html {
 }
 
 header {
-    background-color:  black;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('../imagens/dragao-vermelho-transparência-gradiente.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color:  #F59F16;
     color: white;
     text-align: center;
 }
@@ -59,30 +68,31 @@ section.normal {
 section.imagem {
     background-color: rgb(48, 47, 47);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
    display: inline-block;
-   padding: 5px;
-    background-color: rgba(0, 0, 0, 0.288);
+   padding: 10px;
+   background-color: #de7009a9;
+   border-radius: 10px;
+   text-shadow: 1px 1px 0px black;
 }
 
 section#img01 {
-    background-image: url('../imagens/paisagem-1.jpg');
+    background-image: url('../imagens/nissim-1.jpg');
     background-position: center center;
-    background-size: cover;
 }
 
 section#img02 {
-    background-image: url('../imagens/paisagem-2.jpg');
+    background-image: url('../imagens/nissin-2.jpg');
     background-position: center center;
-    background-size: cover;
-
 }
 
 footer {
-    background-color: black;
+    background-color: #F59F16;
     color: white;
     text-align: center;
     padding: 10px;
